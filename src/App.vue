@@ -26,7 +26,11 @@ import HelloWorld from "./components/HelloWorld.vue";
   <RouterView />
 </template>
 
-<style scoped>
+<style lang="scss">
+@import '@/assets/scss/style.scss';
+</style>
+
+<style scoped lang="scss">
 header {
   line-height: 1.5;
   max-height: 100vh;

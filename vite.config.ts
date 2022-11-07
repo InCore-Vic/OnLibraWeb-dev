@@ -13,5 +13,12 @@ export default defineConfig({
     },
   },
   base: "/",
-  envDir: path.resolve(__dirname, "./env")
+  envDir: path.resolve(__dirname, "./env"),
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@import "@/assets/scss/abstracts/__abstracts.scss";`
+      }
+    }
+  },
 });
